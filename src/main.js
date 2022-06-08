@@ -10,6 +10,6 @@ const updateSW = registerSW({
 })
 window.addEventListener('DOMContentLoaded', (event) => {
     document.querySelector('#new-update-button').addEventListener( 'click', () => {
-        console.log('blick');
+      location.reload();
     })
 });
