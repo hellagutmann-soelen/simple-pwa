@@ -8,7 +8,8 @@ const updateSW = registerSW({
     console.log('')
   },
 })
-
-document.querySelector('#new-update-button').addEventListener( 'click', () => {
-    console.log('blick');
-})
+window.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelector('#new-update-button').addEventListener( 'click', () => {
+        console.log('blick');
+    })
+});
