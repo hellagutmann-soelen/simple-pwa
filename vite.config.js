@@ -5,7 +5,11 @@ import { readFileSync } from 'fs';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    VitePWA({}),
+    VitePWA({
+      workbox: {
+        globPatterns: '**/*.{js,css,html,svg,png}',
+      }
+    }),
   ],
   build: {
     lib: {
