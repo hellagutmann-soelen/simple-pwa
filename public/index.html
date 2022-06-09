@@ -6,12 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Simple PWA</title>
     <script type="module" src="/vite-lit.es.js"></script>
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="/manifest.webmanifest">
   </head>
   <body>
     <h1>Simple PWA</h1>
     <h2>What is PWA?</h2>
-    <img src="/service-worker.svg">
+    A progressive web app (PWA) is a website that looks and behaves as if it is a mobile app.
+    PWAs are built to take advantage of native mobile device features,
+    without requiring the end user to visit an app store, make a purchase and download software locally.
+    Instead, a PWA can be located with a search engine query and accessed immediately through a browser.
+    <div>
+      <img src="/service-worker.svg">
+    </div>
+    <audio controls>
+      <source src="/happy-adventure.mp3" type="audio/mpeg">
+    </audio>
+    <h2>About this example</h2>
+    <ul>
+      <li>This is a super simple example how to integrate PWA for a simple webpage</li>
+      <li>It is actual a project which is hosted on <a href="https://github.com/hellagutmann-soelen/simple-pwa">Github</a> and the website itself is being hosted <a href="https://www.netlify.com/">Netlify.</a></li>
+      <li>Every time the code will be commited and uploaded the Website will be deployed automaticially</li>
+    </ul>
+    <h2>PWA: Not really easy to use for beginners</h2>
+    <ul>
+      <li>The PWA API is very huge and complex</li>
+      <li>If you technicially write your own <a href="https://www.youtube.com/watch?v=IaJqMcOMuDM">Service Worker Code</a></li>
+    </ul>
+
+    <h3>How does it work?</h3>
+    <ul>
+      <li>This project uses <a href="https://vitejs.dev/">Vite</a> which is a super fast and easy to use frontend tooling kit.</li>
+      <li>There is a super easy to use <a href="https://vite-plugin-pwa.netlify.app/">Vite PWA Plugin</a> to make the PWA experience a lot better</li>
+      <li>With vite you can test it locally and build it when you deploy.</li>
+      <li>This Github project is connected with Netlify, which means every time you upload your code the deploy process starts automaticially.</li>
+    </ul>
+    <h3>How to install?</h3>
+    <ul>
+    </ul>
     <dialog id="new-update">
       A new update is available!
       <button id="new-update-button">Reload</button>
