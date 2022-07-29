@@ -5,7 +5,7 @@ const updateSW = registerSW({
     document.querySelector( '#new-update' ).showModal();
   },
   onOfflineReady() {
-    console.log('Ok it can be now used offlien')
+    console.log('Ok it can be now used offline')
   },
 })
 window.addEventListener('DOMContentLoaded', (event) => {
